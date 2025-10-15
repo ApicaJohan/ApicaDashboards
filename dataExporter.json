@@ -1,0 +1,192 @@
+{
+    "header": {
+        "data_source_type": "apica_ascent_prometheus",
+        "dateTimeRange": true,
+        "dropdowns": []
+    },
+    "tabs": [
+        {
+            "key": "Graphite_Explorer",
+            "order": "1",
+            "queriesList": [
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Samples Received /s query",
+                    "options": {
+                        "description": "Samples Received /s query",
+                        "order": 1,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(graphite_samples_received_total[5m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Samples Dropped /s query",
+                    "options": {
+                        "description": "Samples Dropped /s query",
+                        "order": 2,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(graphite_samples_dropped_total[5m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Lines Received /s query",
+                    "options": {
+                        "description": "Lines Received /s query",
+                        "order": 3,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(graphite_lines_received_total[5m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Invalid Lines /s query",
+                    "options": {
+                        "description": "Invalid Lines /s query",
+                        "order": 4,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(graphite_lines_invalid_total[5m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Metrics Mapped /s query",
+                    "options": {
+                        "description": "Metrics Mapped /s query",
+                        "order": 5,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(graphite_metrics_mapped_total[5m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Active TCP Connections query",
+                    "options": {
+                        "description": "Active TCP Connections query",
+                        "order": 6,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "graphite_tcp_connections_active&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Process CPU Usage /s query",
+                    "options": {
+                        "description": "Process CPU Usage /s query",
+                        "order": 7,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(process_cpu_seconds_total[5m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Memory Usage (bytes) query",
+                    "options": {
+                        "description": "Memory Usage (bytes) query",
+                        "order": 8,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "process_resident_memory_bytes&duration=1h&step=5m",
+                    "schema": ""
+                }
+            ],
+            "title": "Graphite_Explorer",
+            "type": "metrics"
+        }
+    ]
+}
