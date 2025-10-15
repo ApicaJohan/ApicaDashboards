@@ -28,7 +28,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_samples_received_total[5m])&duration=1h&step=5m",
+                    "query": "rate(ayushman_graphite_samples_received_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
@@ -50,7 +50,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_samples_dropped_total[5m])&duration=1h&step=5m",
+                    "query": "rate(ayushman_graphite_samples_dropped_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
@@ -72,7 +72,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_lines_received_total[5m])&duration=1h&step=5m",
+                    "query": "rate(ayushman_graphite_lines_received_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
@@ -94,7 +94,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_lines_invalid_total[5m])&duration=1h&step=5m",
+                    "query": "rate(ayushman_graphite_lines_invalid_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
@@ -116,7 +116,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_metrics_mapped_total[5m])&duration=1h&step=5m",
+                    "query": "rate(ayushman_graphite_metrics_mapped_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
@@ -137,7 +137,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "graphite_tcp_connections_active&duration=1h&step=5m",
+                    "query": "ayushman_graphite_tcp_connections_active&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
@@ -185,7 +185,7 @@
                     "schema": ""
                 }
             ],
-            "title": "Graphite_Explorer",
+            "title": "ayushman_Graphite_Explorer",
             "type": "metrics"
         }
     ]
