@@ -12,9 +12,9 @@
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Samples Received /s query",
+                    "name": "CPU Total Usage query",
                     "options": {
-                        "description": "Samples Received /s query",
+                        "description": "CPU Total Usage query",
                         "order": 1,
                         "plot": {
                             "errorColumn": "",
@@ -28,15 +28,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_samples_received_total[5m])&duration=1h&step=5m",
+                    "query": "rate(collectd_cpu_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Samples Dropped /s query",
+                    "name": "Memory Usage query",
                     "options": {
-                        "description": "Samples Dropped /s query",
+                        "description": "Memory Usage query",
                         "order": 2,
                         "plot": {
                             "errorColumn": "",
@@ -50,15 +50,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_samples_dropped_total[5m])&duration=1h&step=5m",
+                    "query": "collectd_memory&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Lines Received /s query",
+                    "name": "Processes Fork Rate /s query",
                     "options": {
-                        "description": "Lines Received /s query",
+                        "description": "Processes Fork Rate /s query",
                         "order": 3,
                         "plot": {
                             "errorColumn": "",
@@ -72,15 +72,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_lines_received_total[5m])&duration=1h&step=5m",
+                    "query": "rate(collectd_processes_fork_rate_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Invalid Lines /s query",
+                    "name": "Processes by State query",
                     "options": {
-                        "description": "Invalid Lines /s query",
+                        "description": "Processes by State query",
                         "order": 4,
                         "plot": {
                             "errorColumn": "",
@@ -94,15 +94,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_lines_invalid_total[5m])&duration=1h&step=5m",
+                    "query": "collectd_processes_ps_state&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Metrics Mapped /s query",
+                    "name": "Disk I/O Time /s query",
                     "options": {
-                        "description": "Metrics Mapped /s query",
+                        "description": "Disk I/O Time /s query",
                         "order": 5,
                         "plot": {
                             "errorColumn": "",
@@ -116,14 +116,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(graphite_metrics_mapped_total[5m])&duration=1h&step=5m",
+                    "query": "rate(collectd_disk_disk_io_time_0_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
+                    "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Active TCP Connections query",
+                    "name": "Disk Ops /s query",
                     "options": {
-                        "description": "Active TCP Connections query",
+                        "description": "Disk Ops /s query",
                         "order": 6,
                         "plot": {
                             "errorColumn": "",
@@ -137,15 +138,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "graphite_tcp_connections_active&duration=1h&step=5m",
+                    "query": "rate(collectd_disk_disk_ops_0_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Process CPU Usage /s query",
+                    "name": "System Entropy query",
                     "options": {
-                        "description": "Process CPU Usage /s query",
+                        "description": "System Entropy query",
                         "order": 7,
                         "plot": {
                             "errorColumn": "",
@@ -159,15 +160,15 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "rate(process_cpu_seconds_total[5m])&duration=1h&step=5m",
+                    "query": "collectd_entropy&duration=1h&step=5m",
                     "schema": ""
                 },
                 {
                     "chart_type": "line",
                     "data_source_name": "Ascent Metrics",
-                    "name": "Memory Usage (bytes) query",
+                    "name": "IRQ Total /s query",
                     "options": {
-                        "description": "Memory Usage (bytes) query",
+                        "description": "IRQ Total /s query",
                         "order": 8,
                         "plot": {
                             "errorColumn": "",
@@ -181,7 +182,7 @@
                         },
                         "upperLimit": ""
                     },
-                    "query": "process_resident_memory_bytes&duration=1h&step=5m",
+                    "query": "rate(collectd_irq_total[5m])&duration=1h&step=5m",
                     "schema": ""
                 }
             ],
