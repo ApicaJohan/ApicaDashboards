@@ -1,0 +1,193 @@
+{
+    "header": {
+        "data_source_type": "apica_ascent_prometheus",
+        "dateTimeRange": true,
+        "dropdowns": []
+    },
+    "tabs": [
+        {
+            "key": "Statsd_Exporter",
+            "order": "1",
+            "queriesList": [
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Event Queue Flushes query",
+                    "options": {
+                        "description": "Event Queue Flushes query",
+                        "order": 1,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_event_queue_flushed_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "UDP Packets Processed query",
+                    "options": {
+                        "description": "UDP Packets Processed query",
+                        "order": 2,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_udp_packets_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Tags Processed query",
+                    "options": {
+                        "description": "Tags Processed query",
+                        "order": 3,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_tags_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Tag Errors query",
+                    "options": {
+                        "description": "Tag Errors query",
+                        "order": 4,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_tag_errors_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "TCP Connections query",
+                    "options": {
+                        "description": "TCP Connections query",
+                        "order": 5,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_tcp_connections_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "TCP Connection Errors query",
+                    "options": {
+                        "description": "TCP Connection Errors query",
+                        "order": 6,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_tcp_connection_errors_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "UDP Packet Drops query",
+                    "options": {
+                        "description": "UDP Packet Drops query",
+                        "order": 7,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_udp_packet_drops_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                },
+                {
+                    "chart_type": "line",
+                    "data_source_name": "Ascent Metrics",
+                    "name": "Unixgram Packets query",
+                    "options": {
+                        "description": "Unixgram Packets query",
+                        "order": 8,
+                        "plot": {
+                            "errorColumn": "",
+                            "groupBy": "",
+                            "x": "Timestamp",
+                            "xLabel": "Timestamp",
+                            "y": [
+                                "value"
+                            ],
+                            "yLabel": "value"
+                        },
+                        "upperLimit": ""
+                    },
+                    "query": "rate(ayushman_statsd_exporter_unixgram_packets_total[1m])&duration=1h&step=5m",
+                    "schema": ""
+                }
+            ],
+            "title": "Statsd_Exporter",
+            "type": "metrics"
+        }
+    ]
+}
